@@ -8,16 +8,11 @@ from openai import OpenAI
 
 load_dotenv()
 
-from openai import OpenAI
-import os
-
-client = OpenAI(
-    api_key=os.getenv("OPENROUTER_API_KEY"),
-    base_url="https://openrouter.ai/api/v1",  
-)
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-oss-120b:free")
 
 if not OPENROUTER_API_KEY:
-    raise RuntimeError("OPENROUTER_API_KEY is missing in .env")
+    raise RuntimeError("OPENROUTER_API_KEY is missing in environment variables")
 
 client = OpenAI(
     api_key=OPENROUTER_API_KEY,
