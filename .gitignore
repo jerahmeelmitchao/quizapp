@@ -1,0 +1,78 @@
+# =========================
+# ENV / SECRETS (CRITICAL)
+# =========================
+.env
+.env.*
+backend/.env
+*.env
+
+# API keys / certificates
+*.key
+*.pem
+*.p12
+*.pfx
+
+# =========================
+# FLUTTER / DART
+# =========================
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# Logs
+*.log
+
+# IDE / Editors
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# ANDROID
+# =========================
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/.gradle
+/android/local.properties
+/android/key.properties
+
+# =========================
+# IOS
+# =========================
+/ios/Pods/
+/ios/.symlinks/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+
+# =========================
+# PYTHON / FASTAPI BACKEND
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Database / temp files
+*.sqlite3
+*.db
+
+# =========================
+# GENERAL FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.tmp
+*.swp
